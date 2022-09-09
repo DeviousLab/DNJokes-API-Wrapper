@@ -8,7 +8,7 @@ type Keys<T> = keyof T & string;
 
 type Params<T> = {
   [K in keyof T]?: T[K]
-} & { max_results?: number | 49, keyword?: string};
+} & { max_results?: number, keyword?: string, dn_id?: number };
 
 class ApiClient<TData> { 
   private endpoint: string;
@@ -38,6 +38,11 @@ class ApiClient<TData> {
       for (let [key, value] of Object.entries(params)) {
         search.set(key, value as string);
       }
+    }
+    if (resource === 'joke/') {
+      let value = parseInt(search.get("dn_id") as string)
+      const url = new URL(`${resource}${value}`, this.endpoint)
+      return this.request<TData[R]>(url, { method: 'GET' });
     }
     const url = new URL(`${resource}?${search}`, this.endpoint);
     console.log(url.toString());
