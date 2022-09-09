@@ -1,29 +1,129 @@
-# modern-npm-package
+<div align="center">
 
-An npm package for demonstration purposes using TypeScript to build for both the ECMAScript Module format (i.e. ESM or ES Module) and CommonJS Module format (CJS). It can be used in Node.js and browser applications.
+  <img src="https://github.com/DeviousLab/DNJokes-API/raw/main/assets/logo.png" alt="logo" width="200" height="auto" />
+  <h1>Deez Nuts Jokes API Wrapper</h1>
+  
+  <p>
+    This is a TypeScript/JavaScript wrapper for the Deez Nuts Jokes API. 
+    The original repo for the API can be found at <a href="https://github.com/DeviousLab/DNJokes-API">DNJokes-API</a>, also available on <a href="https://rapidapi.com/DeviousLab/api/deez-nuts-jokes">RapidAPI</a>.
+  </p>
 
-## Get Started
+  
+<!-- Badges -->
+<p>
+  <a href="">
+    <img src="https://img.shields.io/github/last-commit/DeviousLab/DNJokes-API-Wrapper" alt="last update" />
+  </a>
+  <a href="https://github.com/DeviousLab/DNJokes-API-Wrapper/stargazers">
+    <img src="https://img.shields.io/github/stars/DeviousLab/DNJokes-API-Wrapper" alt="stars" />
+  </a>
+  <a href="https://github.com/DeviousLab/DNJokes-API-Wrapper/issues/">
+    <img src="https://img.shields.io/github/issues/DeviousLab/DNJokes-API-Wrapper" alt="open issues" />
+  </a>
+  <a href="https://github.com/DeviousLab/DNJokes-API-Wrapper/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/DeviousLab/DNJokes-API-Wrapper.svg" alt="license" />
+  </a>
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/DeviousLab/DNJokes-API-Wrapper/Release">
+  <img alt="Snyk Vulnerabilities for GitHub Repo" src="https://img.shields.io/snyk/vulnerabilities/github/DeviousLab/DNJokes-API-Wrapper">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/DeviousLab/DNJokes-API-Wrapper/Tests?label=tests">
+</p>
+   
+<h4>
+    <a href="https://github.com/DeviousLab/DNJokes-API-Wrapper/issues">Report Bug or Suggest Feature</a>
+  </h4>
+</div>
 
-1. Run `npm install` in your terminal
-1. Then run `npm run build`
-1. Update the `package.json` file "name" field with your own package name. Example `@username/package-name`
-1. Create an account with [npm](https://www.npmjs.com/signup) if you don't have one already. Also be sure to enable [two-factor authentication](https://docs.npmjs.com/configuring-two-factor-authentication)
-1. Sign in to your npm account in your terminal with `npm login`
-1. Run `npm publish --access=public` to publish your package
+<br />
 
-### Testing
+<!-- Table of Contents -->
+# :notebook_with_decorative_cover: Table of Contents
 
-1. Install developer dependencies using the following command in your terminal `npm i -D mocha @type/mocha chai @types/chai ts-node`
-1. Create a new file `.mocharc.json` in the root directory with the following contents:
-   ```json
-   {
-     "extension": ["ts"],
-     "spec": "./**/*.spec.ts",
-     "require": "ts-node/register"
-   }
-   ```
-1. Create a `tests` folder
-1. Create an `index.spec.ts` file in the `tests` folder
-1. Write unit tests in the `index.spec.ts` file to test the code in `index.ts`
-1. Add a `"test"` property in the `package.json` file and give it a value of `"mocha"`
-1. Run `npm test` in your terminal from the root folder of the project
+- [About the Project](#star2-about-the-project)
+  * [Tech Stack](#space_invader-tech-stack)
+- [Getting Started](#toolbox-getting-started)
+  * [Installation](#gear-installation)
+  * [Usage](#eyes-usage)
+  * [Running Tests](#test_tube-running-tests)
+- [Contributing](#wave-contributing)
+- [License](#warning-license)
+- [Contact](#handshake-contact)
+- [Acknowledgements](#gem-acknowledgements)
+  
+
+<!-- TechStack -->
+### :space_invader: Tech Stack
+
+  <ul>
+    <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+    <li><a href="https://axios-http.com/">Axios</a></li>
+    <li><a href="https://mochajs.org/">Mocha</a></li>
+  </ul>
+
+
+<!-- Getting Started -->
+## 	:toolbox: Getting Started
+
+<!-- Installation -->
+### :gear: Installation
+
+Install DNJokes-API Wrapper with npm
+
+`npm i dnjokes-api-wrapper`
+
+or with yarn
+
+`yarn add dnjokes-api-wrapper`
+
+<!-- Usage -->
+## :eyes: Usage
+
+To use the wrapper, you need to import it into your project.
+
+ESM Module
+```javascript
+import getAllDNJokes from 'DNJokes-API-Wrapper';
+
+getAllDNJokes().then((res) => {
+  console.log(res);
+});
+```
+
+CommonJS
+```javascript
+const DNJokes = require('DNJokes-API-Wrapper');
+
+DNJokes.getAllDNJokes().then((res) => {
+  console.log(res);
+});
+```
+
+<!-- Running Tests -->
+### :test_tube: Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm test
+```
+
+<!-- Contributing -->
+## :wave: Contributing
+
+Contributions are always welcome! Open an issue with any issues or requests!
+
+<!-- License -->
+## :warning: License
+
+Distributed under the MIT License. See `LICENSE.md` for more information.
+
+<!-- Contact -->
+## :handshake: Contact
+
+[devious@deviouslab.dev](mailto:devious@deviouslab.dev)
+[deviouslab.dev](https://deviouslab.dev)
+
+<!-- Acknowledgments -->
+## :gem: Acknowledgements
+
+ - [Shields.io](https://shields.io/)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
