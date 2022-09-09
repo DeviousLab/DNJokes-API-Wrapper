@@ -19,9 +19,10 @@ export interface Reply {
   fourth?: string;
 }
 
+//Array of categories structure
 export type Resources = {
-  allJokes: Jokes;
-  randomJoke: Jokes;
-  searchJoke: Joke;
-  idJoke: Jokes
+  jokes: Jokes;
+  "joke/random": Jokes;
+  "joke/search": Joke;
+  "joke/": Jokes
 }
