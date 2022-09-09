@@ -45,7 +45,6 @@ class ApiClient<TData> {
       return this.request<TData[R]>(url, { method: 'GET' });
     }
     const url = new URL(`${resource}?${search}`, this.endpoint);
-    console.log(url.toString());
     return this.request<TData[R][]>(url, { method: 'GET' });
   }
 }
