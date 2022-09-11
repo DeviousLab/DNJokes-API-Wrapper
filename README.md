@@ -50,6 +50,10 @@
 - [Contact](#handshake-contact)
 - [Acknowledgements](#gem-acknowledgements)
 
+<!-- About the Project -->
+
+## :star2: About the Project
+
 <!-- TechStack -->
 
 ### :space_invader: Tech Stack
@@ -75,6 +79,12 @@ Install DNJokes-API Wrapper with npm
 or with yarn
 
 `yarn add dnjokes-api-wrapper`
+
+or use as an inline script with a CDN
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/dnjokes-api-wrapper/lib/cjs/index.min.js"></script>
+```
 
 <!-- Usage -->
 

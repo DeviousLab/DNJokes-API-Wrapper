@@ -1,6 +1,6 @@
 {
   "name": "dnjokes-api-wrapper",
-  "version": "0.1.0",
+  "version": "1.1.2",
   "description": "An npm package built with TypeScript as a wrapper for the DNJokes API",
   "exports": {
     ".": {
