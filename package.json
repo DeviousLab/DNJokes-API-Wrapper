@@ -26,7 +26,8 @@
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "test": "mocha --timeout 10000",
     "semantic-release": "semantic-release",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "prepare": "husky install"
   },
   "release": {
     "branches": [
@@ -60,6 +61,7 @@
     "@types/chai": "^4.3.3",
     "@types/mocha": "^9.1.1",
     "chai": "^4.3.6",
+    "husky": "^8.0.1",
     "mocha": "^10.0.0",
     "semantic-release": "^19.0.3",
     "ts-node": "^10.9.1",
